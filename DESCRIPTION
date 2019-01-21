@@ -1,0 +1,24 @@
+Package: browse
+Type: Package
+Title: A file browser for RStudio
+Version: 0.1.9999
+Author: Chun Fung (Jackson) Kwok
+Maintainer: Chun Fung (Jackson) Kwok <kcf.jackson@gmail.com>
+Description: Implements a file browser using `finder.js` to be used 
+    temporarily until RStudio changes to (hopefully) a multi-column 
+    file browser. An important feature of the package is that it 
+    supports re-mapping of the files without changing the directory 
+    structure.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+    subprocess,
+    base64enc,
+    glue,
+    htmltools,
+    httpuv,
+    jsonlite,
+    purrr,
+    magrittr
