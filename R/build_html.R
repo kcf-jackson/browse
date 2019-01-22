@@ -44,7 +44,7 @@ make_body <- function(data) {
     var ws = new WebSocket("ws://localhost:9454");
 
     var container = document.getElementById("container");
-    var data = [<data>];
+    var data = <data>;
     var options = { createItemContent: createItemContent };
     function createItemContent(cfg, item) {
       var data = item.children || cfg.data;

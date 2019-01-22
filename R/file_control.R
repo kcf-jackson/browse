@@ -4,6 +4,11 @@
 #   all_files <- list.files(dir, recursive = T)
 #   all_files[which(path == basename(all_files))]
 # }
+#
+# test_equal(
+#   locate_in("locate_file.R"),
+#   "R/locate_file.R"
+# )
 
 
 # Open file via terminal

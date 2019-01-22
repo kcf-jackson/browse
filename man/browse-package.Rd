@@ -6,10 +6,9 @@
 \alias{browse-package}
 \title{browse: A file browser for RStudio}
 \description{
-Implements a file browser using `finder.js` to be used 
-    temporarily until RStudio changes to (hopefully) a multi-column 
-    file browser. An important feature of the package is that it 
-    supports re-mapping of the files without changing the directory 
-    structure.
+Implements a file browser within RStudio using `finder.js` 
+    which supports multi-column view. A key feature of the package is 
+    that it supports re-mapping of the files without changing the 
+    directory structure.
 }
 \keyword{internal}
