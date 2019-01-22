@@ -2,6 +2,7 @@
 
 export(directory)
 export(stop_app)
+export(virtual_dir)
 importFrom(magrittr,"%>%")
 importFrom(stats,setNames)
 importFrom(utils,browseURL)
