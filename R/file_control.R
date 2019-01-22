@@ -13,7 +13,18 @@
 
 # Open file via terminal
 open_file <- function(msg) {
-  # .Platform$OS.type
-  # linux -> xdg-open, mac -> open
-  system(glue::glue("open -a rstudio {msg$path}"))
+  # .Platform$OS.type: linux -> xdg-open, mac -> open, windows -> none
+  if (.Platform$OS.type == "windows") {
+    # Windows
+    return(system(glue::glue("rstudio {msg$path}")))
+  } else {
+    # Mac OSX
+    osx_check_1 <- grepl("^darwin", R.version$os)
+    osx_check_2 <- tolower(Sys.info()["sysname"]) == "darwin"
+    if (osx_check_1 || osx_check_2) {
+      return(system(glue::glue("open -a rstudio {msg$path}")))
+    }
+    # Linux
+    return(system(glue::glue("rstudio {msg$path}")))
+  }
 }
