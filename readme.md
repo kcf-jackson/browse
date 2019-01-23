@@ -11,7 +11,8 @@ browse::stop_app(handle)           # stop app
 #### Screenshot
 
 <p align = 'center'>
-![Figure 1: File browser in RStudio: Double click to open file / Navigate with arrows then open file with enter.](./man/figures/app_screenshot.png){width=65%}
+    <img src = "./man/figures/app_screenshot.png" width="65%">
+    <div align="center"> Figure 1: File browser in RStudio: Double click to open file / Navigate with arrows then open file with enter. </div>
 </p>
 
 
@@ -20,24 +21,27 @@ How files are stored does not necessarily need to be how they are used. This dis
 
 #### 2.1 Original directory: the `R` folder and the `tests` folder
 <p style="display:flex; align-items:stretch; justify-content:center; height:420px">
-![Original directory `R` folder](./man/figures/long_list_src.png){width=30%}
-![Original directory `tests` folder](./man/figures/long_list_test.png){width=30%}
+  <img src = "./man/figures/long_list_src.png" width="30%">
+  <img src = "./man/figures/long_list_test.png" width="30%">
+  <div align="center"> Figure 2: Original directory </div>
 </p>
 
 #### 2.2a Grouping by modules using virtual directory
-<p align = 'center'>
-![](./man/figures/mapping_1_src.png){width=70%}
+<p align="center">
+  <img src = "./man/figures/mapping_1_src.png" width="70%">
+  <img src = "./man/figures/mapping_1_test.png" width="70%">
+  <div align="center"> Figure 3: Grouping by modules </div>
 </p>
-<p align = 'center'>
-![Figure 3: Grouping by modules](./man/figures/mapping_1_test.png){width=70%}
-</p>
+
 Effectively we now have the support of subfolders without making any changes at all to the original directory. The key message here is again how files are stored do not need to be how they are presented / used. 
 
 #### 2.2b Grouping by workflow using virtual directory
-<p align = 'center'>
-![Figure 4: Todo list style](./man/figures/mapping_2_src_and_test.png){width=70%}
+<p align="center">
+  <img src = "./man/figures/mapping_2_src_and_test.png" width="70%">  
+  <div align="center"> Figure 4: Todo list style </div>
 </p>
-This allows pooling together the R files and the corresponding test files, and organising them into [sprints](https://www.atlassian.com/agile/scrum/sprints). 
+
+This allows pooling together the R files and the corresponding test files, and organising them into [sprints](https://www.atlassian.com/agile/scrum/sprints).
 
 #### 2.3 Code
 
