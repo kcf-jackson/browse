@@ -20,7 +20,7 @@ browse::stop_app(handle)           # stop app
 How files are stored does not necessarily need to be how they are used. This distinction is particularly useful since R package skeleton does not support sub-directories within the R folder. Here is an example how one may use this package to organise their files. 
 
 #### 2.1 Original directory: the `R` folder and the `tests` folder
-<p style="display:flex; align-items:stretch; justify-content:center; height:420px">
+<p align="center">
   <img src = "./man/figures/long_list_src.png" width="30%">
   <img src = "./man/figures/long_list_test.png" width="30%">
   <div align="center"> Figure 2: Original directory </div>
